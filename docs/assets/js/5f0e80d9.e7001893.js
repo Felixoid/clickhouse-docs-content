@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkclickhouse=self.webpackChunkclickhouse||[]).push([[25992],{3786:function(e){e.exports=JSON.parse('{"title":"Reference","slug":"/en","permalink":"/en","navigation":{"previous":{"title":"Defining SQL Users and Roles","permalink":"/en/guides/sre/users-and-roles"},"next":{"title":"Getting Started","permalink":"/en/getting-started"}}}')}}]);
