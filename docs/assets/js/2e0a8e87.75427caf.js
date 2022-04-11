@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkclickhouse=self.webpackChunkclickhouse||[]).push([[20356],{87342:function(e){e.exports=JSON.parse('{"title":"Integrations","slug":"/en/integrations","permalink":"/en/integrations","navigation":{"previous":{"title":"Tutorial","permalink":"/en/tutorial"},"next":{"title":"Airbyte","permalink":"/en/integrations/airbyte-and-clickhouse"}}}')}}]);
