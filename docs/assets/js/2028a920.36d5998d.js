@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkclickhouse=self.webpackChunkclickhouse||[]).push([[80723],{24605:function(e){e.exports=JSON.parse('{"title":"User Guides","slug":"/en/guides","permalink":"/en/guides","navigation":{"previous":{"title":"Tableau","permalink":"/en/connect-a-ui/tableau-and-clickhouse"},"next":{"title":"Developer Guides","permalink":"/category/developer-guides"}}}')}}]);
