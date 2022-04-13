@@ -13,9 +13,11 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: ClickHouse/clickhouse-docs
+          ref: staging
           path: ./
       - name: Download Reference Doc
         run:  |
+          mkdir tmp
           curl https://codeload.github.com/ClickHouse/ClickHouse/tar.gz/docs-staging | tar -xz -C tmp/ --strip=2 "ClickHouse-docs-staging/docs/"
           cp -R tmp/en docs
           cp -R tmp/ru docs/
