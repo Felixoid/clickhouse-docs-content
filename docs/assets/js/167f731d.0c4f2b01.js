@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkclickhouse=self.webpackChunkclickhouse||[]).push([[59663],{57681:function(e){e.exports=JSON.parse('{"title":"Development","slug":"en/development","permalink":"/en/development","navigation":{"previous":{"title":"Named connections","permalink":"/en/operations/named-collections"},"next":{"title":"Development","permalink":"/en/development/"}}}')}}]);
