@@ -13,12 +13,12 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: ClickHouse/clickhouse-docs
-          ref: staging
+          ref: gh-pages
           path: ./
       - name: Download Reference Doc
         run:  |
           mkdir tmp
-          curl https://codeload.github.com/ClickHouse/ClickHouse/tar.gz/docs-staging | tar -xz -C tmp/ --strip=2 "ClickHouse-docs-staging/docs/"
+          curl https://codeload.github.com/ClickHouse/ClickHouse/tar.gz/master | tar -xz -C tmp/ --strip=2 "ClickHouse-master/docs/"
           cp -R tmp/en docs
           cp -R tmp/ru docs/
           cp -R tmp/zh docs/
@@ -30,7 +30,7 @@ jobs:
       - name: Build Docusaurus website
         run: |
           npm update
-          npm install 
+          npm install
           npm run build
       - name: Deploy to GitHub Pages
         if: success()
@@ -39,4 +39,4 @@ jobs:
           target_branch: gh-pages-test
           build_dir: build
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}          
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
