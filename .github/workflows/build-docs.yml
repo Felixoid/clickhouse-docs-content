@@ -17,11 +17,10 @@ jobs:
           path: ./
       - name: Download Reference Doc
         run:  |
-          mkdir tmp
-          curl https://codeload.github.com/ClickHouse/ClickHouse/tar.gz/master | tar -xz -C tmp/ --strip=2 "ClickHouse-master/docs/"
-          cp -R tmp/en docs
-          cp -R tmp/ru docs/
-          cp -R tmp/zh docs/
+          curl https://codeload.github.com/ClickHouse/ClickHouse/tar.gz/master | tar -xz -C ./ --strip=2 "ClickHouse-master/docs/"
+          cp -R ./en docs
+          cp -R ./ru docs/
+          cp -R ./zh docs/
       - name: Set up Node
         uses: actions/setup-node@v2
         with:
