@@ -13,7 +13,6 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: ClickHouse/clickhouse-docs
-          ref: gh-pages
           path: ./
       - name: Download Reference Doc
         run:  |
