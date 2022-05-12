@@ -27,8 +27,9 @@ jobs:
       # Install and build Docusaurus website
       - name: Build Docusaurus website
         run: |
-          yarn install
-          yarn build
+          npm update
+          npm install
+          npm build
       - name: Deploy to GitHub Pages
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
